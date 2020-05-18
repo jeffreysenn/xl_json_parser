@@ -1,0 +1,95 @@
+{
+  "countryList": [
+    {
+      "countryName": "SWEDEN",
+      "baseEmission": {
+        "urban": {
+          "emissions": [
+            {
+              "pollutantName": "Phosphor",
+              "emissionPerTurn": 3
+            }
+          ]
+        },
+        "agriculture": {
+          "emissions": [
+            {
+              "pollutantName": "Phosphor",
+              "emissionPerTurn": 12
+            }
+          ]
+        },
+        "forest": {
+          "emissions": [
+            {
+              "pollutantName": "Phosphor",
+              "emissionPerTurn": 18
+            }
+          ]
+        },
+        "ocean": { "emissions": [] }
+      }
+    },
+    {
+      "countryName": "FINLAND",
+      "baseEmission": {
+        "urban": {
+          "emissions": [
+            {
+              "pollutantName": "Phosphor",
+              "emissionPerTurn": 6
+            }
+          ]
+        },
+        "agriculture": {
+          "emissions": [
+            {
+              "pollutantName": "Phosphor",
+              "emissionPerTurn": 21
+            }
+          ]
+        },
+        "forest": {
+          "emissions": [
+            {
+              "pollutantName": "Phosphor",
+              "emissionPerTurn": 3
+            }
+          ]
+        },
+        "ocean": { "emissions": [] }
+      }
+    },
+    {
+      "countryName": "POLAND",
+      "baseEmission": {
+        "urban": {
+          "emissions": [
+            {
+              "pollutantName": "Phosphor",
+              "emissionPerTurn": 3
+            }
+          ]
+        },
+        "agriculture": {
+          "emissions": [
+            {
+              "pollutantName": "Phosphor",
+              "emissionPerTurn": 21
+            }
+          ]
+        },
+        "forest": {
+          "emissions": [
+            {
+              "pollutantName": "Phosphor",
+              "emissionPerTurn": 15
+            }
+          ]
+        },
+        "ocean": { "emissions": [] }
+      }
+    }
+  ]
+
+}
