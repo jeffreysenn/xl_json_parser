@@ -2,6 +2,8 @@ from openpyxl import Workbook
 from openpyxl import load_workbook
 import json
 from enum import Enum
+from pathlib import Path
+import os
 
 from node import SearchTree
 from xl_node import*
@@ -68,8 +70,8 @@ def WriteData(rows, tree):
                     node.WriteVal(cell.value)
 
 def main():
-    # path = input("Enter the xl file path: ")
-    path = ("xl/test.xlsx")
+    path_str = input("Enter the xl file path: ")
+    path = Path(path_str)
     dict = {}
     wb = load_workbook(path, read_only = True)
     for ws in wb:
@@ -78,8 +80,9 @@ def main():
         spec_rows, data_rows = SplitSpecDataRows(rows)
         tree = BuildTree(spec_rows)
         WriteData(data_rows, tree)
-        print(tree.GetDict())
-
-
+        save_path = path.parent / (ws.title + ".json")
+        with open(save_path, 'w') as outfile:
+            js = json.dump(tree.GetDict(), outfile, indent=2)
+            print("success!")
 
 main()
